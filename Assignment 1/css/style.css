@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../Photos/cool-background.svg'); 
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+/* Header Styles */
+header {
+    background-color: whitesmoke;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+header .logo-and-name {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Styles for index.html */
+.intro {
+    height: 100vh; 
+    width: 100%; 
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.intro h2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    padding-left: 60px;
+    padding-top: 182px;
+}
+
+.intro p {
+    font-size: 45px;
+    color:#007bff;
+    padding-left: 60px;
+}
+
+.explore {
+    height: 100vh; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(220, 228, 254);
+    color: white;
+    padding: 50px 20px; 
+    box-sizing: border-box;
+}
+.explore h2{
+    font-size: 45px;
+    color: rgb(56, 26, 230);
+}
+.explore ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.explore ul li {
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.explore ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content-container {
+    width: 80%; 
+    max-width: 960px; 
+    margin: 100px auto;
+    padding: 40px; 
+    background: #a4bcd6; 
+    border-radius: 50px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    text-align: left; 
+}
+
+.content-container h2 {
+    color: black;
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 32px; 
+}
+
+.content-container p {
+    color: black;
+    font-size: 18px; 
+    padding: 0 20px; 
+}
+
+.content-container ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.content-container li {
+    background-color: #f0f0f0; 
+    border-radius: 15px; 
+    padding: 20px; 
+    margin: 10px 0; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.content-container li h3 {  
+    margin-bottom: 10px; 
+    width: 100%; 
+}
+
+.content-container li p {
+    text-align: left; 
+    width: 100%; 
+    padding-left: 20px; 
+}
+
+.content-container ul li img{
+    width: 120px; 
+    max-width: 120px; 
+}
+.content-container div img {
+        width: 100%; /* Responsive image sizing */
+        max-width: 100%; /* Ensure image is not bigger than its container */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 12px; /* Rounded corners for aesthetics */
+    
+      
+}
+.form-container {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    margin: 100px auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* General form styles */
+form {
+    display: flex;
+    
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Label styling */
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none; 
+}
+
+
+
+/* Styling for submit button */
+button[type="submit"] {
+    padding: 10px 15px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
