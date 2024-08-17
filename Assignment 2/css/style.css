@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* body Style */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../Photos/cool-background.svg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+/* header Style */
+header {
+    background-color: whitesmoke;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease; 
+}
+
+header:hover {
+    background-color: #f0f0f0; 
+}
+
+header .logo-and-name {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    animation: fadeInDown 1s ease; 
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 40px;
+    margin-right: 30px;
+    transition: transform 0.3s ease; 
+}
+
+header nav ul li:hover {
+    transform: scale(1.1); 
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    transition: color 0.3s ease; 
+}
+
+header nav ul li a:hover {
+    color: #007bff; 
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+header nav ul li a:hover::after {
+    width: 100%; 
+}
+
+/* footer Styles */
+footer {
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    animation: fadeInUp 1s ease; 
+}
+
+/* Shared Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Styles for index.html */
+.intro {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    animation: fadeIn 2s ease; /* animation */
+}
+
+.intro h2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    padding-left: 60px;
+    padding-top: 182px;
+}
+
+.intro p {
+    font-size: 45px;
+    color: #007bff;
+    padding-left: 60px;
+    animation: fadeIn 2.5s ease; /* animation */
+}
+
+.explore {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(220, 228, 254);
+    color: white;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    animation: fadeIn 2s ease; /* animation */
+}
+
+.explore h2 {
+    font-size: 45px;
+    color: rgb(56, 26, 230);
+}
+
+.explore ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.explore ul li {
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.explore ul li:hover {
+    transform: translateY(-10px); /* Hover */
+}
+
+.explore ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.explore ul li a:hover {
+    background-color: #0056b3; 
+    color: #ffffff;
+}
+
+/* Content Container Styles */
+.content-container {
+    width: 80%;
+    max-width: 960px;
+    margin: 100px auto;
+    padding: 40px;
+    background: #a4bcd6;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    animation: fadeInUp 1.5s ease; /* animation */
+}
+
+.content-container h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.content-container p {
+    color: black;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.content-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-container li {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-container li:hover {
+    transform: translateY(-10px); /* Hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* shadow on hover */
+}
+
+.content-container li h3 {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.content-container li p {
+    text-align: left;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.content-container ul li img {
+    width: 120px;
+    max-width: 120px;
+}
+
+.content-container div img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Form Container (contact.html) */
+.form-container {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    margin: 100px auto;
+    width: 90%;
+    max-width: 600px;
+    animation: fadeInUp 1.5s ease; /* animation */
+}
+
+/* General form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; 
+}
+
+/* Accordion (FAQs Page) */
+.accordion {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.accordion h3 {
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion.active .accordion-content {
+    max-height: 200px; 
+}
+
+.accordion h3:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Gallery (Album Page) */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    animation: fadeIn 2s ease; /* animation */
+}
+
+.gallery-container img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid Layout for Projects (projects.html) */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    animation: fadeIn 1.5s ease; /* animation */
+}
+
+.projects-grid .project-item {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-grid .project-item:hover {
+    transform: translateY(-10px); /* Hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects-grid .project-item h3 {
+    margin-bottom: 15px;
+}
+
+.projects-grid .project-item p {
+    margin-bottom: 20px;
+}
+
+.projects-grid .project-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.projects-grid .project-item a:hover {
+    text-decoration: underline;
+}
